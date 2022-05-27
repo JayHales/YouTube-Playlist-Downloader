@@ -9,7 +9,7 @@ const app = express();
 
 app.get('/', (req, res) => {
 
-    res.send(
+    res.end(
         `<p>Might take a while after pressing download. Be patient. </p><input placeholder="Enter playlist url..."><button onclick="window.location.href='./pl?q=' + document.querySelector('input').value">Download</button>`
     );
 
